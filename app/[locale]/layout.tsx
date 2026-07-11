@@ -37,39 +37,45 @@ export async function generateMetadata({
     verification: {
       google: "oxTE3OxPSa7oAziMPM4jF7cpA7Wa4nNtN_hBMMNe4vE",
     },
-    title: isArabic
-      ? "هيكسا باور 9 | مركز PPF وحماية سيارات في الرياض"
-      : "Hexa Power 9 | PPF & Car Protection Center in Riyadh",
+   title: isArabic
+  ? "PPF الرياض | حماية سيارات ونانو سيراميك | هيكسا باور 9 النخيل"
+  : "PPF Riyadh | Car Protection & Nano Ceramic | Hexa Power 9",
 
-    description: isArabic
-      ? "هيكسا باور 13 فرعًا حي النخيل في الرياض متخصص في حماية PPF، النانو سيراميك، العازل الحراري، تلميع السيارات، والعناية الداخلية والخارجية."
-      : "Hexa Power 9 Al Nakheel branch in Riyadh specializes in PPF, nano ceramic, window film, car polishing, and interior and exterior detailing.",
+description: isArabic
+  ? "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 13 فرعًا داخل المملكة، متخصص في حماية PPF، نانو سيراميك، عازل حراري، تلميع وعناية سيارات."
+  : "Hexa Power 9 Al Nakheel branch in Riyadh, part of Hexa Power’s 13-branch network in Saudi Arabia, specializes in PPF, nano ceramic, window film, car polishing, and detailing.",
 
-    keywords: isArabic
-      ? [
-          "PPF الرياض",
-          "حماية PPF الرياض",
-          "مركز PPF الرياض",
-          "نانو سيراميك الرياض",
-          "عازل حراري سيارات الرياض",
-          "تظليل حراري الرياض",
-          "تلميع سيارات الرياض",
-          "حماية سيارات الرياض",
-          "هيكسا باور 9",
-          "حي النخيل الرياض",
-        ]
-      : [
-          "PPF Riyadh",
-          "Paint Protection Film Riyadh",
-          "Car Protection Riyadh",
-          "Nano Ceramic Riyadh",
-          "Window Film Riyadh",
-          "Car Polishing Riyadh",
-          "Car Detailing Riyadh",
-          "Hexa Power 9",
-          "Al Nakheel Riyadh",
-        ],
-
+keywords: isArabic
+  ? [
+      "PPF الرياض",
+      "بي بي اف الرياض",
+      "حماية PPF الرياض",
+      "حماية سيارات الرياض",
+      "حماية واجهة السيارة",
+      "تغليف حماية السيارة",
+      "افضل مركز PPF في الرياض",
+      "نانو سيراميك الرياض",
+      "عازل حراري سيارات الرياض",
+      "تظليل حراري الرياض",
+      "تلميع سيارات الرياض",
+      "عناية سيارات الرياض",
+      "هيكسا باور 9",
+      "هيكسا باور النخيل",
+      "حي النخيل الرياض",
+    ]
+  : [
+      "PPF Riyadh",
+      "Paint Protection Film Riyadh",
+      "Car Protection Riyadh",
+      "Best PPF Center Riyadh",
+      "Nano Ceramic Riyadh",
+      "Window Film Riyadh",
+      "Car Polishing Riyadh",
+      "Car Detailing Riyadh",
+      "Hexa Power 9",
+      "Hexa Power Al Nakheel",
+      "Al Nakheel Riyadh",
+    ],
     robots: {
       index: true,
       follow: true,
@@ -95,7 +101,7 @@ const localBusinessSchema = {
   name: "Hexa Power 9 - Al Nakheel",
   alternateName: "هيكسا باور 9 - فرع حي النخيل",
   description:
-    "مركز متخصص في حماية وعناية السيارات في الرياض يقدم خدمات PPF، النانو سيراميك، العازل الحراري، تلميع السيارات، والعناية الداخلية والخارجية.",
+  "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 13 فرعًا داخل المملكة، يقدم خدمات حماية PPF، النانو سيراميك، العازل الحراري، تلميع السيارات، والعناية الداخلية والخارجية.",
   telephone: "+966597359130",
   address: {
     "@type": "PostalAddress",

@@ -114,8 +114,8 @@ export default function SEOSection({ locale }: SEOSectionProps) {
               }}
             >
               {isArabic
-                ? "هيكسا باور 13 فرعًا حي النخيل في الرياض يقدم حلول حماية وعناية السيارات من PPF، النانو سيراميك، العازل الحراري، التلميع، والعناية الداخلية والخارجية."
-                : "Hexa Power 9 Al Nakheel branch in Riyadh provides complete car protection and detailing services including PPF, nano ceramic, window film, polishing, and interior/exterior care."}
+  ? "هيكسا باور 9 فرع حي النخيل في الرياض، ضمن شبكة هيكسا باور التي تضم 13 فرعًا داخل المملكة، يقدم حلول حماية وعناية السيارات من PPF، النانو سيراميك، العازل الحراري، التلميع، والعناية الداخلية والخارجية."
+  : "Hexa Power 9 Al Nakheel branch in Riyadh, part of Hexa Power’s 13-branch network in Saudi Arabia, provides complete car protection and detailing services including PPF, nano ceramic, window film, polishing, and interior/exterior care."}
             </p>
           </div>
 
