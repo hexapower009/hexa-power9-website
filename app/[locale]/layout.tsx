@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { type Metadata } from "next";
-import { locales, type Locale } from "@/data/site";
 import Script from "next/script";
+import { locales, type Locale } from "@/data/site";
+
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -170,14 +171,55 @@ return (
       strategy="afterInteractive"
     />
 
-    <Script id="google-ads-tag" strategy="afterInteractive">
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-17990425966');
-      `}
-    </Script>
+    <Script
+      id="google-ads-whatsapp-conversion"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17990425966');
+
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) !== 'undefined') {
+                window.location = url;
+              }
+            };
+
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17990425966/qjNbCIufy84cEO66wIJD',
+              'event_callback': callback
+            });
+
+            return false;
+          }
+
+          document.addEventListener('click', function(event) {
+            var el = event.target;
+
+            while (el && el.tagName !== 'A') {
+              el = el.parentElement;
+            }
+
+            if (!el) return;
+
+            var href = el.href || el.getAttribute('href') || '';
+
+            var isWhatsApp =
+              href.indexOf('wa.me/966597359130') !== -1 ||
+              href.indexOf('api.whatsapp.com') !== -1 ||
+              href.indexOf('whatsapp.com/send') !== -1;
+
+            if (!isWhatsApp) return;
+
+            event.preventDefault();
+            gtag_report_conversion(href);
+          });
+        `,
+      }}
+    />
 
     <script
       type="application/ld+json"
