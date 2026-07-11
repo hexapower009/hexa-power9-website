@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { type Metadata } from "next";
 import { locales, type Locale } from "@/data/site";
+import Script from "next/script";
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -164,12 +165,27 @@ const localBusinessSchema = {
 
 return (
   <div lang={locale} dir={dir}>
+    <Script
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17990425966"
+      strategy="afterInteractive"
+    />
+
+    <Script id="google-ads-tag" strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17990425966');
+      `}
+    </Script>
+
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(localBusinessSchema),
       }}
     />
+
     {children}
   </div>
 );
