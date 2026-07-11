@@ -23,6 +23,17 @@ export async function generateMetadata({
   const isArabic = locale === "ar";
 
   return {
+  metadataBase: new URL("https://hexapoweralnakheel.com"),
+
+  alternates: {
+    canonical: `/${locale}`,
+    languages: {
+      ar: "/ar",
+      en: "/en",
+      "x-default": "/ar",
+    },
+  },
+
     verification: {
       google: "oxTE3OxPSa7oAziMPM4jF7cpA7Wa4nNtN_hBMMNe4vE",
     },
