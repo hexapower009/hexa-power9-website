@@ -24,9 +24,9 @@ export const siteConfig = {
     phoneInternational: "+966597359130",
     whatsappNumber: "966597359130",
     whatsappMessage: {
-      ar: "السلام عليكم، وصلت لكم من موقع فرع النخيل وأبغى أعرف أنسب باقة حماية لسيارتي.",
-      en: "Hello, I came from Al Nakheel branch website and I would like to know the best protection package for my car.",
-    },
+  ar: "السلام عليكم، أرغب في معرفة أفضل باقة حماية مناسبة لسيارتي من هيكسا باور 9 فرع حي النخيل.",
+  en: "Hello, I would like to know the best protection package for my car from Hexa Power 9 Al Nakheel branch.",
+},
     mapUrl: "https://maps.app.goo.gl/pjUnApf4jnXYPTXx5",
   },
 

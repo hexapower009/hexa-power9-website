@@ -14,11 +14,11 @@ export default function ContactSection({ locale }: ContactSectionProps) {
 
   const whatsappText = encodeURIComponent(
     isArabic
-      ? "السلام عليكم، أرغب في معرفة الباقة المناسبة لسيارتي من هيكسا باور 13 فرعًا حي النخيل."
-      : "Hello, I would like to know the right package for my car from Hexa Power 9 Al Nakheel branch."
+      ? "السلام عليكم، أرغب في معرفة أفضل باقة حماية مناسبة لسيارتي من هيكسا باور 9 فرع حي النخيل."
+      : "Hello, I would like to know the best protection package for my car from Hexa Power 9 Al Nakheel branch."
   );
 
-  const whatsappUrl = `https://wa.me/966597359130?text=${whatsappText}`;
+ const whatsappUrl = `https://wa.me/966597359130?text=${whatsappText}`;
 
   return (
     <section

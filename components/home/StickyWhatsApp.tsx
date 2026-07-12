@@ -14,8 +14,7 @@ export default function StickyWhatsApp({ locale }: StickyWhatsAppProps) {
     : "Hello, I would like to know the best protection package for my car from Hexa Power 9 Al Nakheel branch."
 );
 
-  const whatsappUrl = `https://wa.me/966597359130?text=${whatsappText}`;
-
+const whatsappUrl = `https://wa.me/966597359130?text=${whatsappText}`;
   return (
     <>
       <style>
