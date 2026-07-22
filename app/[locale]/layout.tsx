@@ -3,7 +3,6 @@ import { type Metadata } from "next";
 import Script from "next/script";
 import { locales, type Locale } from "@/data/site";
 
-
 type LocaleLayoutProps = {
   children: React.ReactNode;
   params: Promise<{
@@ -167,6 +166,26 @@ const localBusinessSchema = {
 return (
   <div lang={locale} dir={dir}>
     <Script
+  id="microsoft-clarity"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){
+          (c[a].q=c[a].q||[]).push(arguments);
+        };
+
+        t=l.createElement(r);
+        t.async=1;
+        t.src="https://www.clarity.ms/tag/"+i;
+
+        y=l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xohtuln73f");
+    `,
+  }}
+/>
+    <Script
       src="https://www.googletagmanager.com/gtag/js?id=AW-17990425966"
       strategy="afterInteractive"
     />
@@ -220,6 +239,7 @@ return (
         `,
       }}
     />
+    
         <Script
       id="tiktok-pixel"
       strategy="afterInteractive"
@@ -282,6 +302,7 @@ return (
         `,
       }}
     />
+    
 
     <script
       type="application/ld+json"
