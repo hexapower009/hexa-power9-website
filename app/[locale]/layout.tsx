@@ -201,19 +201,26 @@ return (
           gtag('config', 'AW-17990425966');
 
           function gtag_report_conversion(url) {
-            var callback = function () {
-              if (typeof(url) !== 'undefined') {
-                window.location = url;
-              }
-            };
+  var redirected = false;
 
-            gtag('event', 'conversion', {
-              'send_to': 'AW-17990425966/qjNbCIufy84cEO66wIJD',
-              'event_callback': callback
-            });
+  var goToWhatsApp = function () {
+    if (redirected) return;
+    redirected = true;
 
-            return false;
-          }
+    if (typeof url !== 'undefined') {
+      window.location.href = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17990425966/qjNbCIufy84cEO66wIJD',
+    'event_callback': goToWhatsApp
+  });
+
+  setTimeout(goToWhatsApp, 1200);
+
+  return false;
+}
 
           document.addEventListener('click', function(event) {
             var el = event.target;
