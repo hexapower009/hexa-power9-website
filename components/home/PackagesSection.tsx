@@ -127,7 +127,7 @@ export default function PackagesSection({ locale }: PackagesSectionProps) {
 ];
 
   const getPackageUrl = (message: string) => {
-    const phone = siteConfig.contact.phoneInternational;
+    const phone = siteConfig.contact.whatsappNumber;
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   };
 
