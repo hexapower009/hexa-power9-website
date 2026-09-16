@@ -17,10 +17,10 @@ export default function HeroSection({ locale }: HeroSectionProps) {
   const snapchatUrl = "https://snapchat.com/t/R5UCOcbD";
 
   const whatsappText = encodeURIComponent(
-  isArabic
-    ? "السلام عليكم، أرغب في معرفة أفضل باقة حماية مناسبة لسيارتي من هيكسا باور 9 فرع حي النخيل."
-    : "Hello, I would like to know the best protection package for my car from Hexa Power 9 Al Nakheel branch."
-);
+    isArabic
+      ? "السلام عليكم، أرغب في معرفة أفضل باقة حماية مناسبة لسيارتي من هيكسا باور 9 فرع حي النخيل."
+      : "Hello, I would like to know the best protection package for my car from Hexa Power 9 Al Nakheel branch."
+  );
 
   const whatsappUrl = `https://wa.me/966597359130?text=${whatsappText}`;
 
@@ -79,15 +79,20 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             }
 
             #home .hero-kicker {
-              display: block !important;
+              display: inline-flex !important;
+              align-items: center !important;
+              justify-content: center !important;
               visibility: visible !important;
               opacity: 1 !important;
               height: auto !important;
               overflow: visible !important;
               margin: 0 0 18px !important;
-              padding: 0 !important;
-              color: #ff1f2d !important;
-              font-size: 17px !important;
+              padding: 8px 14px !important;
+              color: #ffffff !important;
+              background: rgba(13, 122, 58, 0.18) !important;
+              border: 1px solid rgba(32, 197, 102, 0.35) !important;
+              border-radius: 999px !important;
+              font-size: 16px !important;
               line-height: 1.6 !important;
               font-weight: 950 !important;
               position: relative !important;
@@ -95,7 +100,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             }
 
             #home .hero-title {
-              font-size: 44px !important;
+              font-size: 42px !important;
               line-height: 1.18 !important;
               margin-top: 0 !important;
             }
@@ -148,7 +153,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
         style={{
           minHeight: "calc(100vh - 90px)",
           background:
-            "radial-gradient(circle at top right, rgba(229,9,20,0.22), transparent 34%), linear-gradient(180deg, #120104 0%, #050505 100%)",
+            "radial-gradient(circle at top right, rgba(13,122,58,0.24), transparent 32%), radial-gradient(circle at bottom left, rgba(229,9,20,0.14), transparent 28%), linear-gradient(180deg, #07120b 0%, #050505 100%)",
           color: "white",
           padding: "92px 0 70px",
           overflow: "hidden",
@@ -174,19 +179,51 @@ export default function HeroSection({ locale }: HeroSectionProps) {
               boxShadow: "0 34px 130px rgba(0,0,0,0.55)",
               minHeight: "620px",
               background: "#111",
+              position: "relative",
             }}
           >
             <img
-              src="/images/gallery/showroom-rear.webp"
-              alt={isArabic ? "هيكسا باور 9" : "Hexa Power 9"}
+  src="/national-day-gclass.webp"
+  alt={isArabic ? "عروض اليوم الوطني هيكسا باور 9" : "Hexa Power 9 National Day Offers"}
+  style={{
+    width: "100%",
+    height: "100%",
+    minHeight: "620px",
+    objectFit: "cover",
+    display: "block",
+  }}
+/>
+
+            <div
               style={{
-                width: "100%",
-                height: "100%",
-                minHeight: "620px",
-                objectFit: "cover",
-                display: "block",
+                position: "absolute",
+                inset: 0,
+                background:
+  "linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.42))",
+                pointerEvents: "none",
               }}
             />
+
+            <div
+              style={{
+                position: "absolute",
+                bottom: "24px",
+                left: "24px",
+                right: "24px",
+                padding: "16px 18px",
+                borderRadius: "18px",
+                background: "rgba(0,0,0,0.58)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255,255,255,0.12)",
+                textAlign: "center",
+                fontWeight: 950,
+                fontSize: "17px",
+              }}
+            >
+              {isArabic
+                ? "عروض خاصة بمناسبة اليوم الوطني 96"
+                : "Special Saudi National Day 96 Offers"}
+            </div>
           </div>
 
           <div
@@ -200,23 +237,30 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             <p
               className="hero-kicker"
               style={{
-                margin: "0 0 16px",
-                color: "#E50914",
-                fontSize: "19px",
+                margin: "0 0 18px",
+                color: "#ffffff",
+                fontSize: "17px",
                 fontWeight: 950,
                 lineHeight: 1.4,
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "9px 16px",
+                borderRadius: "999px",
+                background: "rgba(13,122,58,0.18)",
+                border: "1px solid rgba(32,197,102,0.35)",
               }}
             >
               {isArabic
-                ? "مركز العناية الشاملة للسيارات"
-                : "Premium Automotive Care Center"}
+                ? "عروض اليوم الوطني 96 🇸🇦"
+                : "Saudi National Day 96 Offers 🇸🇦"}
             </p>
 
             <h1
               className="hero-title"
               style={{
                 margin: 0,
-                fontSize: "clamp(52px, 6vw, 96px)",
+                fontSize: "clamp(50px, 6vw, 92px)",
                 lineHeight: 1.08,
                 fontWeight: 950,
                 letterSpacing: "-1px",
@@ -224,15 +268,19 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             >
               {isArabic ? (
                 <>
-                  أفضل مركز <span style={{ color: "white" }}>PPF</span>
+                  عروض اليوم الوطني
                   <br />
-                  في الرياض
+                  <span style={{ color: "#20c566" }}>
+                    على حماية سيارتك
+                  </span>
                 </>
               ) : (
                 <>
-                  Premium PPF
+                  National Day Offers
                   <br />
-                  in Riyadh
+                  <span style={{ color: "#20c566" }}>
+                    For Your Car Protection
+                  </span>
                 </>
               )}
             </h1>
@@ -243,14 +291,14 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                 margin: "28px auto 0",
                 maxWidth: "880px",
                 color: "#F2F2F2",
-                fontSize: "22px",
+                fontSize: "21px",
                 lineHeight: 1.9,
                 fontWeight: 800,
               }}
             >
               {isArabic
-                ? "حماية PPF، نانو سيراميك، تلميع، عازل حراري، وعناية داخلية وخارجية لسيارتك."
-                : "PPF protection, nano ceramic, polishing, window film, and complete interior and exterior car care."}
+                ? "عروض خاصة على حماية PPF والعازل الحراري والعناية بالسيارة في هيكسا باور 9 فرع حي النخيل. اكتشف الباقة المناسبة لسيارتك."
+                : "Special National Day offers on PPF, window film, and car care at Hexa Power 9 Al Nakheel. Discover the right package for your car."}
             </p>
 
             <div
@@ -263,7 +311,18 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                 justifyContent: "center",
               }}
             >
-              <a href={whatsappUrl} target="_blank" style={primaryButton}>
+              <a href="#national-day-offers" style={nationalDayButton}>
+                {isArabic
+                  ? "شاهد عروض اليوم الوطني"
+                  : "View National Day Offers"}
+              </a>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={primaryButton}
+              >
                 {isArabic ? "راسلنا واتساب" : "WhatsApp Us"}
               </a>
 
@@ -271,7 +330,12 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                 {isArabic ? "اتصل الآن" : "Call Now"}
               </a>
 
-              <a href={mapUrl} target="_blank" style={secondaryButton}>
+              <a
+                href={mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={secondaryButton}
+              >
                 {isArabic ? "افتح الموقع على الخريطة" : "Open Location"}
               </a>
             </div>
@@ -364,6 +428,21 @@ export default function HeroSection({ locale }: HeroSectionProps) {
   );
 }
 
+const nationalDayButton: CSSProperties = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  minHeight: "64px",
+  padding: "0 34px",
+  borderRadius: "999px",
+  background: "#0d7a3a",
+  color: "white",
+  textDecoration: "none",
+  fontSize: "18px",
+  fontWeight: 950,
+  boxShadow: "0 20px 60px rgba(13,122,58,0.32)",
+  border: "1px solid rgba(255,255,255,0.14)",
+};
 const primaryButton: CSSProperties = {
   display: "inline-flex",
   alignItems: "center",
@@ -371,7 +450,7 @@ const primaryButton: CSSProperties = {
   minHeight: "64px",
   padding: "0 34px",
   borderRadius: "999px",
-  background: "#E50914",
+ background: "#E50914",
   color: "white",
   textDecoration: "none",
   fontSize: "18px",

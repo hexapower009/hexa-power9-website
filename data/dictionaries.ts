@@ -33,7 +33,7 @@ const ar = {
   trust: [
     { value: "10", label: "سنوات ضمان على PPF" },
     { value: "∞", label: "ضمان مدى الحياة للعازل" },
-    { value: "13", label: "فروع داخل المملكة" },
+    { value: "9", label: "فروع داخل المملكة" },
     { value: "5.0", label: "تقييمنا على Google" }
   ],
   packagesIntro: {
@@ -100,7 +100,7 @@ const ar = {
   },
   branch: {
     eyebrow: "فرع النخيل فقط",
-    title: "Hexa Power شبكة تضم 13 فرعًا، وحجزك هنا مخصص لفرع النخيل",
+    title: "Hexa Power شبكة تضم 9 فروع، وحجزك هنا مخصص لفرع النخيل",
     subtitle: "صممنا الموقع حتى يخدم مبيعات فرع النخيل مباشرة: واتساب الفرع، خريطة الفرع، ورسائل حجز واضحة يمكن تتبعها في الحملات.",
     hoursTitle: "ساعات العمل",
     hours: ["السبت - الخميس: 9 صباحًا إلى 2 بعد منتصف الليل", "الجمعة: 1 ظهرًا إلى 2 بعد منتصف الليل"],
@@ -220,7 +220,7 @@ const en = {
   },
   branch: {
     eyebrow: "Al Nakheel Only",
-    title: "Hexa Power has 13 branches, and this booking page is dedicated to Al Nakheel",
+    title: "Hexa Power has 9 branches, and this booking page is dedicated to Al Nakheel",
     subtitle: "This website is built to support Al Nakheel branch sales directly: dedicated WhatsApp, maps and campaign-ready tracking messages.",
     hoursTitle: "Working Hours",
     hours: ["Saturday - Thursday: 9 AM to 2 AM", "Friday: 1 PM to 2 AM"],
