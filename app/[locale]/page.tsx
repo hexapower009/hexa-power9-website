@@ -1,7 +1,6 @@
 import { type Locale } from "@/data/site";
 import Header from "@/components/layout/Header";
 import HeroSection from "@/components/home/HeroSection";
-import NationalDayOffersSection from "@/components/home/NationalDayOffersSection";
 import PackagesSection from "@/components/home/PackagesSection";
 import AboutSection from "@/components/home/AboutSection";
 import GallerySection from "@/components/home/GallerySection";
@@ -25,7 +24,6 @@ export default async function HomePage({ params }: HomePageProps) {
     <main className="min-h-screen bg-hexa-black text-white">
       <Header locale={currentLocale} />
       <HeroSection locale={currentLocale} />
-      <NationalDayOffersSection locale={currentLocale} />
       <PackagesSection locale={currentLocale} />
       <GallerySection locale={currentLocale} />
       <AboutSection locale={currentLocale} />
