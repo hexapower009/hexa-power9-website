@@ -177,7 +177,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             }}
           >
             <img
-              src="/images/gallery/showroom-rear.webp"
+              src="/images/gallery/hexa-hero.webp"
               alt={isArabic ? "هيكسا باور 9" : "Hexa Power 9"}
               style={{
                 width: "100%",
