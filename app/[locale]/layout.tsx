@@ -43,8 +43,8 @@ export async function generateMetadata({
   : "PPF Riyadh | Car Protection & Nano Ceramic | Hexa Power 9",
 
 description: isArabic
-  ? "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 13 فرعًا داخل المملكة، متخصص في حماية PPF، نانو سيراميك، عازل حراري، تلميع وعناية سيارات."
-  : "Hexa Power 9 Al Nakheel branch in Riyadh, part of Hexa Power’s 13-branch network in Saudi Arabia, specializes in PPF, nano ceramic, window film, car polishing, and detailing.",
+  ? "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 11 فرعًا داخل المملكة، متخصص في حماية PPF، نانو سيراميك، عازل حراري، تلميع وعناية سيارات."
+  : "Hexa Power 9 Al Nakheel branch in Riyadh, part of Hexa Power’s 11-branch network in Saudi Arabia, specializes in PPF, nano ceramic, window film, car polishing, and detailing.",
 
 keywords: isArabic
   ? [
@@ -102,8 +102,8 @@ const localBusinessSchema = {
   name: "Hexa Power 9 - Al Nakheel",
   alternateName: "هيكسا باور 9 - فرع حي النخيل",
   description:
-  "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 13 فرعًا داخل المملكة، يقدم خدمات حماية PPF، النانو سيراميك، العازل الحراري، تلميع السيارات، والعناية الداخلية والخارجية.",
-  telephone: "+966597359130",
+  "هيكسا باور 9 فرع حي النخيل بالرياض، ضمن شبكة هيكسا باور التي تضم 11 فرعًا داخل المملكة، يقدم خدمات حماية PPF، النانو سيراميك، العازل الحراري، تلميع السيارات، والعناية الداخلية والخارجية.",
+  telephone: "+966597359110",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Riyadh",
@@ -117,7 +117,7 @@ const localBusinessSchema = {
   },
   openingHours: [
     "Sa-Th 09:00-02:00",
-    "Fr 13:00-02:00"
+    "Fr 11:00-02:00"
   ],
   priceRange: "$$",
   hasMap: "https://www.google.com/maps?cid=12855065691082982779",
@@ -234,7 +234,7 @@ return (
             var href = el.href || el.getAttribute('href') || '';
 
             var isWhatsApp =
-              href.indexOf('wa.me/966597359130') !== -1 ||
+              href.indexOf('wa.me/966597359110') !== -1 ||
               href.indexOf('api.whatsapp.com') !== -1 ||
               href.indexOf('whatsapp.com/send') !== -1;
 
@@ -322,3 +322,5 @@ return (
   </div>
 );
 }
+
+
