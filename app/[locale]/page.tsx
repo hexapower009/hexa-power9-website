@@ -9,11 +9,10 @@ import FAQSection from "@/components/home/FAQSection";
 import ContactSection from "@/components/home/ContactSection";
 import StickyWhatsApp from "@/components/home/StickyWhatsApp";
 import SEOSection from "@/components/home/SEOSection";
+import VipOfferPopup from "@/components/home/VipOfferPopup";
 
 type HomePageProps = {
-  params: Promise<{
-    locale: string;
-  }>;
+  params: Promise<{ locale: string }>;
 };
 
 export default async function HomePage({ params }: HomePageProps) {
@@ -23,6 +22,7 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <main className="min-h-screen bg-hexa-black text-white">
       <Header locale={currentLocale} />
+      <VipOfferPopup locale={currentLocale} />
       <HeroSection locale={currentLocale} />
       <PackagesSection locale={currentLocale} />
       <GallerySection locale={currentLocale} />
